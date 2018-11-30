@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spawn : MonoBehaviour {
 	public float nextFire = 0.4f;
 	private float myTime = 0.2f;
-
+	int x= 0;
 	public GameObject enemy;
 	// Use this for initialization
 	void Start () {
@@ -20,8 +20,10 @@ public class Spawn : MonoBehaviour {
 		if (myTime > nextFire)
 		{
 
-			Instantiate(enemy, this.transform.position + new Vector3(0, 0, 0.5f), this.transform.rotation);
-			myTime = 0.0f;
+				Instantiate(enemy, this.transform.position + new Vector3(0, 0, 0.5f), this.transform.rotation);
+				myTime = 0.0f;
+
+
 		}
 	}
 }
