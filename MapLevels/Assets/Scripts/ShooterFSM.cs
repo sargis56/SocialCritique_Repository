@@ -192,7 +192,7 @@ public class ShooterFSM : MonoBehaviour
     {
         Vector3 targetDir = player.transform.position - this.transform.position;
 
-        float step = 20 * Time.deltaTime;
+        float step = 5 * Time.deltaTime;
 
         Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0f);
 
