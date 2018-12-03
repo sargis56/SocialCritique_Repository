@@ -23,7 +23,7 @@ public class MenuOnly : MonoBehaviour
     }
     public void OnTriggerEnter(Collider other)
     {
-        if (other.transform.tag == "enemy")
+        if (other.transform.tag == "enemy" || other.transform.tag == "bullet")
         {
             x = Random.Range(-18, 19);
             z = Random.Range(-15, 10);

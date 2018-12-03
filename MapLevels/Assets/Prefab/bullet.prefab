@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4520712754445368}
   - component: {fileID: 33328250638246628}
   - component: {fileID: 23821661377533414}
-  - component: {fileID: 54395209410182394}
-  - component: {fileID: 114277049480445608}
   - component: {fileID: 65836549887078434}
+  - component: {fileID: 114581262947615278}
+  - component: {fileID: 54924753998352360}
   m_Layer: 9
   m_Name: bullet
   m_TagString: bullet
@@ -37,7 +37,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1938000213688378}
-  m_LocalRotation: {x: 0, y: 0.008648367, z: 0, w: 0.9999626}
+  m_LocalRotation: {x: 0, y: 0.0038266524, z: 0, w: 0.99999267}
   m_LocalPosition: {x: -9.799, y: 25.712126, z: -21.296}
   m_LocalScale: {x: 0.03, y: 0.03, z: 0.3}
   m_Children: []
@@ -86,7 +86,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1938000213688378}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &54395209410182394
+--- !u!54 &54924753998352360
 Rigidbody:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,7 +113,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114277049480445608
+--- !u!114 &114581262947615278
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}

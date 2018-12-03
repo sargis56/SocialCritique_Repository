@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class ShooterFSM : MonoBehaviour {
+public class ShooterFSM : MonoBehaviour
+{
     public enum EnemyState { Idle, Chase, Shoot, Dead, Evade, Enroute };
     public EnemyState currentState;
 
     public GameObject player;
 
-    public Rigidbody bullet;
-
+    //public Rigidbody bullet;
+    //
+    public GameObject bullet;
 
     public float speed = 2;
 
@@ -35,7 +37,7 @@ public class ShooterFSM : MonoBehaviour {
     public float nextFire = 0.4f;
     private float myTime = 0.2f;
 
-   
+
 
     // Private variables
     private Rigidbody rBody;
@@ -85,7 +87,7 @@ public class ShooterFSM : MonoBehaviour {
         //{
         //    if (hit2.collider.tag == "Player")
         //    {
-                
+
         //        //Debug.DrawLine(this.transform.position, this.transform.position - transform.TransformDirection(Vector3.back) * 10, Color.red);
         //        //Debug.Log("see");
         //        Debug.DrawLine(this.transform.position, player.transform.position);
@@ -175,22 +177,22 @@ public class ShooterFSM : MonoBehaviour {
 
         if (myTime > nextFire)
         {
-
-            Instantiate(bullet, this.transform.position + new Vector3(0,0,0.5f), this.transform.rotation);
+            
+            var b = (GameObject)Instantiate(bullet, this.transform.position + new Vector3(0, 0, 0.5f), this.transform.rotation);
             bullet.transform.eulerAngles = new Vector3(0, this.transform.rotation.y, 0);
             myTime = 0.0f;
+
+            // timer to destory bullets
+            Destroy(b, 4f);
         }
-        // hp -= 1;
-
-
-
+        // hp -= 1;    
     }
 
     void rotate()
     {
         Vector3 targetDir = player.transform.position - this.transform.position;
 
-		float step = 20 * Time.deltaTime;
+        float step = 20 * Time.deltaTime;
 
         Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0f);
 
