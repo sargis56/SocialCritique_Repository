@@ -16,9 +16,6 @@ public class ShooterFSM : MonoBehaviour
 
     public float speed = 2;
 
-
-
-
     public float attackRange = 10;
 
     public float sightRange = 10;
@@ -49,7 +46,7 @@ public class ShooterFSM : MonoBehaviour
     {
         currentState = EnemyState.Idle;
         player = GameObject.FindGameObjectWithTag("Player");
-
+        
         rb = GetComponent<Rigidbody>();
 
 
@@ -58,26 +55,30 @@ public class ShooterFSM : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateState();
-
-        RaycastHit hit;
-
-        Ray landingRay = new Ray(transform.position, player.transform.position - this.transform.position);
-
-        if (Physics.Raycast(landingRay, out hit, 10))
+        if (player != null)
         {
-            if (hit.collider.tag == "Player")
-            {
-                inVision = true;
-                Debug.DrawLine(this.transform.position, player.transform.position);
-                //Debug.Log("see");
-            }
-            else
-            {
-                inVision = false;
-            }
+            UpdateState();
 
+            RaycastHit hit;
+
+            Ray landingRay = new Ray(transform.position, player.transform.position - this.transform.position);
+
+            if (Physics.Raycast(landingRay, out hit, 10))
+            {
+                if (hit.collider.tag == "Player")
+                {
+                    inVision = true;
+                    Debug.DrawLine(this.transform.position, player.transform.position);
+                    //Debug.Log("see");
+                }
+                else
+                {
+                    inVision = false;
+                }
+
+            }
         }
+      
 
 
         //RaycastHit hit2;

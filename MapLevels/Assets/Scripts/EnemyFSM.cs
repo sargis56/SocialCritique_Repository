@@ -45,30 +45,34 @@ public class EnemyFSM : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        UpdateState();
+        if (player != null)
+        {
+            UpdateState();
 
-        
-        RaycastHit hit;
+
+            RaycastHit hit;
 
 
-        //raycasting///
-        //can be used for gun bullet hit detection
-        
-       Ray landingRay = new Ray(transform.position, player.transform.position -this.transform.position);
+            //raycasting///
+            //can be used for gun bullet hit detection
 
-       if (Physics.Raycast(landingRay, out hit, 10))
-       {
-           if(hit.collider.tag == "Player")
-           {
-                inVision = true;
-               Debug.DrawLine(this.transform.position, player.transform.position);
-                //Debug.Log("see");
-            }
-            else
+            Ray landingRay = new Ray(transform.position, player.transform.position - this.transform.position);
+
+            if (Physics.Raycast(landingRay, out hit, 10))
             {
-                inVision = false;
+                if (hit.collider.tag == "Player")
+                {
+                    inVision = true;
+                    Debug.DrawLine(this.transform.position, player.transform.position);
+                    //Debug.Log("see");
+                }
+                else
+                {
+                    inVision = false;
+                }
             }
-       }
+        }
+ 
        
       
 

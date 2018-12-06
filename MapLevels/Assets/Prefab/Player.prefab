@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 54790512565767470}
   - component: {fileID: 195995566083181882}
   - component: {fileID: 143823227098904160}
+  - component: {fileID: 114289414769899480}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -102,6 +103,38 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &114289414769899480
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1053843885229826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 223
+    i1: 171
+    i2: 8
+    i3: 164
+    i4: 113
+    i5: 25
+    i6: 116
+    i7: 196
+    i8: 89
+    i9: 44
+    i10: 132
+    i11: 51
+    i12: 196
+    i13: 21
+    i14: 180
+    i15: 204
+  m_ServerOnly: 1
+  m_LocalPlayerAuthority: 0
 --- !u!136 &136300701016500906
 CapsuleCollider:
   m_ObjectHideFlags: 1

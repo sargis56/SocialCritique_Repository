@@ -117,7 +117,7 @@ MonoBehaviour:
     i14: 28
     i15: 246
   m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0
+  m_LocalPlayerAuthority: 1
 --- !u!114 &114256366542379696
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -129,9 +129,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e94586d1dcde6c5419d2e4e2d2030ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newLevel: MenuScene
-  Player: {fileID: 1513572836128916, guid: 39cfab1ef95f23548b7090527567091c, type: 2}
-  Lobby: {fileID: 0}
 --- !u!135 &135588888434503050
 SphereCollider:
   m_ObjectHideFlags: 1

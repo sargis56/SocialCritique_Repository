@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114783197813868790}
   - component: {fileID: 114266569408393110}
   m_Layer: 0
-  m_Name: World02
+  m_Name: NextMap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -129,9 +129,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e94586d1dcde6c5419d2e4e2d2030ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newLevel: Level02
-  Player: {fileID: 1513572836128916, guid: 39cfab1ef95f23548b7090527567091c, type: 2}
-  Lobby: {fileID: 4807045089799640, guid: 8fce33532a39126479e748302b671bae, type: 2}
 --- !u!135 &135067651226070770
 SphereCollider:
   m_ObjectHideFlags: 1

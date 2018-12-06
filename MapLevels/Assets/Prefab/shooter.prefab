@@ -134,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   player: {fileID: 0}
-  bullet: {fileID: 0}
+  bullet: {fileID: 1938000213688378, guid: 1a005721acbaa1644a75e30a4fc8ed91, type: 2}
   speed: 2
   attackRange: 5
   sightRange: 6

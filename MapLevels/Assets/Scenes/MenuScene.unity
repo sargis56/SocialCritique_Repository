@@ -232,6 +232,15 @@ Prefab:
       propertyPath: m_AssetId.i15
       value: 202
       objectReference: {fileID: 0}
+    - target: {fileID: 1564655802616816, guid: fe827de3a288a334aaec64fbc71547ca, type: 2}
+      propertyPath: m_Name
+      value: Start
+      objectReference: {fileID: 0}
+    - target: {fileID: 114226526277693326, guid: fe827de3a288a334aaec64fbc71547ca,
+        type: 2}
+      propertyPath: m_ServerOnly
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe827de3a288a334aaec64fbc71547ca, type: 2}
   m_IsPrefabAsset: 0
@@ -767,12 +776,12 @@ Prefab:
     - target: {fileID: 114501630370088628, guid: a36295106e507cd49ae15572fbeaf60c,
         type: 2}
       propertyPath: m_OfflineScene
-      value: 
+      value: MenuScene
       objectReference: {fileID: 0}
     - target: {fileID: 114501630370088628, guid: a36295106e507cd49ae15572fbeaf60c,
         type: 2}
       propertyPath: m_OnlineScene
-      value: 
+      value: Level01
       objectReference: {fileID: 0}
     - target: {fileID: 114501630370088628, guid: a36295106e507cd49ae15572fbeaf60c,
         type: 2}
@@ -900,6 +909,15 @@ Prefab:
         type: 2}
       propertyPath: m_AssetId.i15
       value: 93
+      objectReference: {fileID: 0}
+    - target: {fileID: 1533135018251848, guid: 2b31e13d41b526f429427246bdf80d5d, type: 2}
+      propertyPath: m_Name
+      value: Nextmap
+      objectReference: {fileID: 0}
+    - target: {fileID: 114266569408393110, guid: 2b31e13d41b526f429427246bdf80d5d,
+        type: 2}
+      propertyPath: m_ServerOnly
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b31e13d41b526f429427246bdf80d5d, type: 2}
@@ -1622,6 +1640,16 @@ Prefab:
         type: 2}
       propertyPath: m_AssetId.i15
       value: 246
+      objectReference: {fileID: 0}
+    - target: {fileID: 114203561772200784, guid: 0196c5b5e7e00114ea1939ef70261cf6,
+        type: 2}
+      propertyPath: m_ServerOnly
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114203561772200784, guid: 0196c5b5e7e00114ea1939ef70261cf6,
+        type: 2}
+      propertyPath: m_LocalPlayerAuthority
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0196c5b5e7e00114ea1939ef70261cf6, type: 2}

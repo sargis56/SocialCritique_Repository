@@ -24,8 +24,9 @@ GameObject:
   - component: {fileID: 135155629506203578}
   - component: {fileID: 114308079407895210}
   - component: {fileID: 114226526277693326}
+  - component: {fileID: 114611827501348814}
   m_Layer: 0
-  m_Name: World01
+  m_Name: Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -129,9 +130,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e94586d1dcde6c5419d2e4e2d2030ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newLevel: Level01
+--- !u!114 &114611827501348814
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1564655802616816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c25fdbc4b28b6498a89210ed778e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   Player: {fileID: 1513572836128916, guid: 39cfab1ef95f23548b7090527567091c, type: 2}
-  Lobby: {fileID: 4807045089799640, guid: 8fce33532a39126479e748302b671bae, type: 2}
+  startposition: {fileID: 0}
 --- !u!135 &135155629506203578
 SphereCollider:
   m_ObjectHideFlags: 1

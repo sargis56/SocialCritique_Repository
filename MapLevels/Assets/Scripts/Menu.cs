@@ -6,52 +6,22 @@ using UnityEngine.SceneManagement;
 
 public class Menu : NetworkBehaviour
 {
-    [SerializeField] private string newLevel;
-    public GameObject Player;
-    public Transform Lobby;
+    //private AssetBundle myLoadedAssetBundle;
+    //private string[] scenePaths;
 
-    // Use this for initialization
-    //void Awake()
+    //// Use this for initialization
+    //void Start()
     //{
-    //    Instantiate(Player, Lobby.position, Quaternion.identity);
+    //    myLoadedAssetBundle = AssetBundle.LoadFromFile("Assets/AssetBundles/scenes");
+    //    scenePaths = myLoadedAssetBundle.GetAllScenePaths();
     //}
 
-    //private void Start()
+    //void OnGUI()
     //{
-    //    DontDestroyOnLoad(Player);
-    //}
-    IEnumerator LoadYourAsyncScene()
-    {
-        // Set the current Scene to be able to unload it later
-        Scene currentScene = SceneManager.GetActiveScene();
-
-        // The Application loads the Scene in the background at the same time as the current Scene.
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(newLevel, LoadSceneMode.Additive);
-
-        // Wait until the last operation fully loads to return anything
-        while (!asyncLoad.isDone)
-        {
-            yield return null;
-        }
-
-        // Move the GameObject (you attach this in the Inspector) to the newly loaded Scene
-        SceneManager.MoveGameObjectToScene(Player, SceneManager.GetSceneByName(newLevel));
-        // Unload the previous Scene
-        SceneManager.UnloadSceneAsync(currentScene);
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Player")
-        {
-            StartCoroutine(LoadYourAsyncScene());
-        }
-    }
-    //        if (other.gameObject.tag == "Player")
+    //    if (GUI.Button(new Rect(10, 10, 100, 30), "Change Scene"))
     //    {
-    //        Scene sceneToLoad = SceneManager.GetSceneByName(newLevel);
-    //SceneManager.LoadScene(sceneToLoad.name, LoadSceneMode.Additive);
-    //        SceneManager.MoveGameObjectToScene(other.gameObject, sceneToLoad);
-    //        Debug.Log("Level Changing");
-
+    //        Debug.Log("Scene2 loading: " + scenePaths[2]);
+    //        SceneManager.LoadScene(scenePaths[2], LoadSceneMode.Single);
     //    }
+    //}
 }

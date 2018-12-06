@@ -76,9 +76,10 @@ GameObject:
   - component: {fileID: 54463762787541884}
   - component: {fileID: 82973188158346142}
   - component: {fileID: 195887196527186832}
+  - component: {fileID: 114307195503603630}
   m_Layer: 0
   m_Name: FPSController
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,7 +91,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1513572836128916}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.9, y: 1.49, z: -3.91}
+  m_LocalPosition: {x: 207.1315, y: -23.400002, z: 36.27247}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4572828180324284}
@@ -475,6 +476,38 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
   m_JumpSound: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
+--- !u!114 &114307195503603630
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1513572836128916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 57
+    i1: 207
+    i2: 171
+    i3: 30
+    i4: 249
+    i5: 95
+    i6: 35
+    i7: 84
+    i8: 139
+    i9: 112
+    i10: 144
+    i11: 82
+    i12: 117
+    i13: 103
+    i14: 9
+    i15: 28
+  m_ServerOnly: 1
+  m_LocalPlayerAuthority: 0
 --- !u!124 &124513758458707838
 Behaviour:
   m_ObjectHideFlags: 1
