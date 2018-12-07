@@ -6,22 +6,32 @@ using UnityEngine.SceneManagement;
 
 public class Menu : NetworkBehaviour
 {
-    //private AssetBundle myLoadedAssetBundle;
-    //private string[] scenePaths;
+    public GameObject Player;
+    public Transform location;
+    public string currentscene;
 
-    //// Use this for initialization
-    //void Start()
-    //{
-    //    myLoadedAssetBundle = AssetBundle.LoadFromFile("Assets/AssetBundles/scenes");
-    //    scenePaths = myLoadedAssetBundle.GetAllScenePaths();
-    //}
+    // Use this for initialization
+    void Start()
+    {
+        
+    }
 
-    //void OnGUI()
-    //{
-    //    if (GUI.Button(new Rect(10, 10, 100, 30), "Change Scene"))
-    //    {
-    //        Debug.Log("Scene2 loading: " + scenePaths[2]);
-    //        SceneManager.LoadScene(scenePaths[2], LoadSceneMode.Single);
-    //    }
-    //}
+    void OnGUI()
+    {
+        if (GUI.Button(new Rect(10, 10, 100, 30), "Change Scene"))
+        {
+
+
+                SceneManager.LoadScene("Scenes/Level02");
+            Instantiate(Player, location.position, Quaternion.identity);
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene(currentscene);
+        }
+
+    }
 }

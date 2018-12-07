@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - enemy
+  - World01
+  - World02
+  - MenuLevel
   layers:
   - Default
   - TransparentFX

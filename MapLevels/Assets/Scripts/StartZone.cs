@@ -20,7 +20,8 @@ public class StartZone : MonoBehaviour {
     {
         if(other.gameObject.tag == "Player")
         {
-            Player.transform.position = startposition.transform.position;
+
+            other.transform.position = startposition.transform.position;
         }
     }
 }
