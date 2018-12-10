@@ -8,6 +8,7 @@ TagManager:
   - World01
   - World02
   - MenuLevel
+  - PlayerC
   layers:
   - Default
   - TransparentFX

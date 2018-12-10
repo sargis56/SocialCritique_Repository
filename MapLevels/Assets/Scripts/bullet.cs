@@ -14,12 +14,17 @@ public class bullet : MonoBehaviour {
 
     }
 
+    
 
     private void OnTriggerEnter(Collider other)
     {
+        var hit = other.gameObject;
+        var health = hit.GetComponent<Health>();
+        if (health != null)
+        {
+            health.TakeDamage(10);
+        }
 
-		Debug.Log(other.tag);
-
-
+        Destroy(gameObject);
     }
 }

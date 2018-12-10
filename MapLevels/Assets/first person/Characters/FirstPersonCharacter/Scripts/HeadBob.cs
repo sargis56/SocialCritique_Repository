@@ -1,10 +1,11 @@
 using System;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityStandardAssets.Utility;
 
 namespace UnityStandardAssets.Characters.FirstPerson
 {
-    public class HeadBob : MonoBehaviour
+    public class HeadBob : NetworkBehaviour
     {
         public Camera Camera;
         public CurveControlledBob motionBob = new CurveControlledBob();
@@ -28,7 +29,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void Update()
         {
-          //  m_CameraRefocus.GetFocusPoint();
+            
+            //  m_CameraRefocus.GetFocusPoint();
             Vector3 newCameraPosition;
             if (rigidbodyFirstPersonController.Velocity.magnitude > 0 && rigidbodyFirstPersonController.Grounded)
             {

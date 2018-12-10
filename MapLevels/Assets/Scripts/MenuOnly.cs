@@ -25,6 +25,7 @@ public class MenuOnly : MonoBehaviour
     {
         if (other.transform.tag == "enemy" || other.transform.tag == "bullet")
         {
+            
             x = Random.Range(-18, 19);
             z = Random.Range(-15, 10);
             currentPosition = new Vector3(x, 2f, z);
