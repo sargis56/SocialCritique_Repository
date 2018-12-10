@@ -19,7 +19,12 @@ public class PlayerController : NetworkBehaviour {
         {
             return;
         }
-
+        if(!isServer)
+        { return; }
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            CmdFire();
+        }
     }
 
     // … but it is run on the Server!

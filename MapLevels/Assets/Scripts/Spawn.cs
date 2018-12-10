@@ -18,7 +18,7 @@ public class Spawn : NetworkBehaviour {
 	void Update () {
 
 		myTime = myTime + Time.deltaTime;
-        if (numSpawn > 10)
+        if (numSpawn < 10)
 		if (myTime > nextFire)
 		{
 

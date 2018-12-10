@@ -13,7 +13,7 @@ public class ShooterFSM : MonoBehaviour
     //public Rigidbody bullet;
     //
     public GameObject bullet;
-
+    public Transform bulletspawn;
     public float speed = 2;
 
     public float attackRange = 10;
@@ -179,7 +179,7 @@ public class ShooterFSM : MonoBehaviour
         if (myTime > nextFire)
         {
             
-            var b = (GameObject)Instantiate(bullet, this.transform.position + new Vector3(0, 0, 0.5f), this.transform.rotation);
+            var b = (GameObject)Instantiate(bullet, bulletspawn.transform.position + new Vector3(0, 0, 0.5f), this.transform.rotation);
             bullet.transform.eulerAngles = new Vector3(0, this.transform.rotation.y, 0);
             myTime = 0.0f;
 
@@ -204,7 +204,7 @@ public class ShooterFSM : MonoBehaviour
 
     void Dead()
     {
-
+        Destroy(this);
 
     }
 

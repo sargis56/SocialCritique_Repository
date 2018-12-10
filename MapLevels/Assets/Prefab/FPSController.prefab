@@ -77,6 +77,8 @@ GameObject:
   - component: {fileID: 82973188158346142}
   - component: {fileID: 195887196527186832}
   - component: {fileID: 114307195503603630}
+  - component: {fileID: 114678562244299464}
+  - component: {fileID: 114894369144792070}
   m_Layer: 0
   m_Name: FPSController
   m_TagString: PlayerC
@@ -143,7 +145,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1513572836128916}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2.3911297, y: 4.34, z: -3.4780886}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4572828180324284}
@@ -186,7 +188,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1181787781713830}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.099, z: 0.7}
+  m_LocalPosition: {x: 0, y: -0.57, z: 0.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4572828180324284}
@@ -623,7 +625,7 @@ MonoBehaviour:
     i13: 103
     i14: 9
     i15: 28
-  m_ServerOnly: 1
+  m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
 --- !u!114 &114477693880954764
 MonoBehaviour:
@@ -652,6 +654,34 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114678562244299464
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1513572836128916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d728ea381cb37e44a5ebbc4b5cc9c8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyOnDeath: 0
+  currentHealth: 100
+  healthBar: {fileID: 224761467699964316}
+--- !u!114 &114894369144792070
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1513572836128916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c02d9f2d6c0c1d409baf662db126016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1938000213688378, guid: 1a005721acbaa1644a75e30a4fc8ed91,
+    type: 2}
+  bulletSpawn: {fileID: 4717439730445104}
 --- !u!124 &124513758458707838
 Behaviour:
   m_ObjectHideFlags: 1

@@ -152,7 +152,7 @@ public class EnemyFSM : MonoBehaviour {
 
     void Dead()
     {
-
+        Destroy(this);
 
     }
 

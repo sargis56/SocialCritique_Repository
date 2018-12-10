@@ -8,11 +8,11 @@ public class StartZone : MonoBehaviour {
     public Transform startposition;
 
     // Use this for initialization
-    void Start()
+    void Awake()
     {
         Player = GameObject.FindWithTag("PlayerC");
     }
-
+    
     // Update is called once per frame
     void Update()
     {
