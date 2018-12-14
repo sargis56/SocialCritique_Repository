@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking;
+//using UnityEngine.Networking;
 
-public class Spawn : NetworkBehaviour {
+public class Spawn : MonoBehaviour {
 	public float nextFire = 0.4f;
     public int numSpawn = 9;
 	private float myTime = 0.2f;
@@ -21,9 +21,9 @@ public class Spawn : NetworkBehaviour {
         if (numSpawn < 10)
 		if (myTime > nextFire)
 		{
-
-				var evil = (GameObject)Instantiate(enemy, this.transform.position + new Vector3(0, 0, 0.5f), this.transform.rotation);
-                NetworkServer.Spawn(evil);
+                Instantiate(enemy, this.transform.position + new Vector3(0, 0, 0.5f), this.transform.rotation);
+                //var evil = (GameObject)Instantiate(enemy, this.transform.position + new Vector3(0, 0, 0.5f), this.transform.rotation);
+                //NetworkServer.Spawn(evil);
                 myTime = 0.0f;
                 numSpawn =+ 1;
 

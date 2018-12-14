@@ -8,11 +8,10 @@ public class EnemyFSM : MonoBehaviour {
     public EnemyState currentState;
 
     public GameObject player;
-
   
     public float speed = 2;
 
-
+    public float hp = Health.maxHealth;
 
 
     public float attackRange = 2;
@@ -23,7 +22,7 @@ public class EnemyFSM : MonoBehaviour {
 
     public float time;
 
-    public float hp = 100;
+    //public float hp = currentHealth;
 
 
     public float forward = 100;
@@ -93,12 +92,25 @@ public class EnemyFSM : MonoBehaviour {
 
   }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        
+            if (hp >= 0)
+            {
+                hp -= 15;
+            }
+    
+        else
+        {
+            Destroy(gameObject);
+}
+        
+    }
 
 
 
-
-  //making overlap sphere visible
-  private void OnDrawGizmosSelected()
+    //making overlap sphere visible
+    private void OnDrawGizmosSelected()
   {
 
 
@@ -152,7 +164,7 @@ public class EnemyFSM : MonoBehaviour {
 
     void Dead()
     {
-        Destroy(this);
+        Destroy(gameObject);
 
     }
 

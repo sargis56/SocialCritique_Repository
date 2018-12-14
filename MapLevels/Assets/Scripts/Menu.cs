@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 
-public class Menu : NetworkBehaviour
+public class Menu : MonoBehaviour
 {
     public GameObject Player;
     public Transform location;
@@ -13,7 +13,7 @@ public class Menu : NetworkBehaviour
     // Use this for initialization
     void Start()
     {
-        
+
     }
 
     void OnGUI()
@@ -22,9 +22,10 @@ public class Menu : NetworkBehaviour
         {
 
 
-                SceneManager.LoadScene("Scenes/Level02");
-            Instantiate(Player, location.position, Quaternion.identity);
+            SceneManager.LoadScene("Scenes/MenuScene");
+            
         }
+
     }
     private void OnTriggerEnter(Collider other)
     {

@@ -24,8 +24,6 @@ GameObject:
   - component: {fileID: 65375602800106400}
   - component: {fileID: 114108525969367940}
   - component: {fileID: 195851676604591476}
-  - component: {fileID: 114704088615148654}
-  - component: {fileID: 114579392685178262}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: enemy
@@ -120,59 +118,6 @@ MonoBehaviour:
   time: 0
   hp: 100
   forward: 100
---- !u!114 &114579392685178262
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1014973055212796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TransformSyncMode: 1
-  m_SendInterval: 0.1
-  m_SyncRotationAxis: 7
-  m_RotationSyncCompression: 0
-  m_SyncSpin: 0
-  m_MovementTheshold: 0.001
-  m_VelocityThreshold: 0.0001
-  m_SnapThreshold: 5
-  m_InterpolateRotation: 1
-  m_InterpolateMovement: 1
---- !u!114 &114704088615148654
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1014973055212796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 9
-    i1: 143
-    i2: 210
-    i3: 243
-    i4: 22
-    i5: 190
-    i6: 148
-    i7: 148
-    i8: 155
-    i9: 148
-    i10: 96
-    i11: 218
-    i12: 9
-    i13: 101
-    i14: 43
-    i15: 244
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0
 --- !u!195 &195851676604591476
 NavMeshAgent:
   m_ObjectHideFlags: 1

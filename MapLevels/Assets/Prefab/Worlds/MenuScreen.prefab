@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 23720717805005522}
   - component: {fileID: 135588888434503050}
   - component: {fileID: 114256366542379696}
-  - component: {fileID: 114203561772200784}
   m_Layer: 0
   m_Name: MenuScreen
   m_TagString: Untagged
@@ -86,38 +85,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1405341248390482}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114203561772200784
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1405341248390482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 1
-    i1: 150
-    i2: 197
-    i3: 181
-    i4: 231
-    i5: 224
-    i6: 1
-    i7: 20
-    i8: 234
-    i9: 25
-    i10: 57
-    i11: 239
-    i12: 112
-    i13: 38
-    i14: 28
-    i15: 246
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
 --- !u!114 &114256366542379696
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -129,6 +96,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e94586d1dcde6c5419d2e4e2d2030ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  location: {fileID: 0}
+  currentscene: 
 --- !u!135 &135588888434503050
 SphereCollider:
   m_ObjectHideFlags: 1

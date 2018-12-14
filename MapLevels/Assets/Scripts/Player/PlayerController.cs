@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking;
+//using UnityEngine.Networking;
 
-public class PlayerController : NetworkBehaviour {
+public class PlayerController : MonoBehaviour {
 
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
@@ -15,12 +15,12 @@ public class PlayerController : NetworkBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (!isLocalPlayer)
-        {
-            return;
-        }
-        if(!isServer)
-        { return; }
+        //if (!isLocalPlayer)
+        //{
+        //    return;
+        //}
+        //if(!isServer)
+        //{ return; }
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             CmdFire();
@@ -28,7 +28,7 @@ public class PlayerController : NetworkBehaviour {
     }
 
     // … but it is run on the Server!
-    [Command]
+    //[Command]
     void CmdFire()
     {
         // Create the Bullet from the Bullet Prefab
@@ -41,14 +41,14 @@ public class PlayerController : NetworkBehaviour {
         bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 6;
 
         // Spawn the bullet on the Clients
-        NetworkServer.Spawn(bullet);
-
+        //NetworkServer.Spawn(bullet);
+       
         // Destroy the bullet after 2 seconds
         Destroy(bullet, 2.0f);
     }
 
-    public override void OnStartLocalPlayer()
-    {
-        GetComponent<MeshRenderer>().material.color = Color.blue;
-    }
+    //public override void OnStartLocalPlayer()
+    //{
+    //    GetComponent<MeshRenderer>().material.color = Color.blue;
+    //}
 }

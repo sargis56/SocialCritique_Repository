@@ -20,9 +20,11 @@ public class bullet : MonoBehaviour {
     {
         var hit = other.gameObject;
         var health = hit.GetComponent<Health>();
+        
         if (health != null)
         {
-            health.TakeDamage(10);
+            health.TakeDamage(5);
+            
         }
 
         Destroy(gameObject);

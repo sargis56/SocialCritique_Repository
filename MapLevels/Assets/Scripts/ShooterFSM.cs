@@ -24,8 +24,8 @@ public class ShooterFSM : MonoBehaviour
 
     public float time;
 
-    public float hp = 100;
-
+    //public float hp = 100;
+    public float hp = Health.maxHealth;
 
     public float forward = 100;
 
@@ -119,8 +119,17 @@ public class ShooterFSM : MonoBehaviour
 
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if( hp >= 0) { 
+                hp -= 15;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
 
-
+    }
 
 
     //making overlap sphere visible
@@ -204,7 +213,7 @@ public class ShooterFSM : MonoBehaviour
 
     void Dead()
     {
-        Destroy(this);
+        Destroy(gameObject);
 
     }
 

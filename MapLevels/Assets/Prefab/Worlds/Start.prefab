@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 23933254185238718}
   - component: {fileID: 135155629506203578}
   - component: {fileID: 114308079407895210}
-  - component: {fileID: 114226526277693326}
   - component: {fileID: 114611827501348814}
   m_Layer: 0
   m_Name: Start
@@ -87,38 +86,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1564655802616816}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114226526277693326
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1564655802616816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 254
-    i1: 130
-    i2: 125
-    i3: 227
-    i4: 162
-    i5: 136
-    i6: 163
-    i7: 52
-    i8: 170
-    i9: 236
-    i10: 100
-    i11: 251
-    i12: 199
-    i13: 21
-    i14: 71
-    i15: 202
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0
 --- !u!114 &114308079407895210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -130,6 +97,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e94586d1dcde6c5419d2e4e2d2030ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  location: {fileID: 0}
+  currentscene: 
 --- !u!114 &114611827501348814
 MonoBehaviour:
   m_ObjectHideFlags: 1

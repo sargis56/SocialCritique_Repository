@@ -39,8 +39,6 @@ GameObject:
   - component: {fileID: 65196404902514416}
   - component: {fileID: 195161195136669488}
   - component: {fileID: 114654015517055692}
-  - component: {fileID: 114912300995236624}
-  - component: {fileID: 114258738673581796}
   m_Layer: 10
   m_Name: shooter
   m_TagString: enemy
@@ -55,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1219330828898790}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.057}
+  m_LocalPosition: {x: 0, y: 0, z: 1.208}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4340444962145444}
@@ -129,27 +127,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114258738673581796
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1961911404509614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TransformSyncMode: 1
-  m_SendInterval: 0.1
-  m_SyncRotationAxis: 7
-  m_RotationSyncCompression: 0
-  m_SyncSpin: 0
-  m_MovementTheshold: 0.001
-  m_VelocityThreshold: 0.0001
-  m_SnapThreshold: 5
-  m_InterpolateRotation: 1
-  m_InterpolateMovement: 1
 --- !u!114 &114654015517055692
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -175,38 +152,6 @@ MonoBehaviour:
   nextFire: 1
   spawn: {fileID: 0}
   rb: {fileID: 0}
---- !u!114 &114912300995236624
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1961911404509614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 160
-    i1: 138
-    i2: 40
-    i3: 234
-    i4: 171
-    i5: 48
-    i6: 213
-    i7: 132
-    i8: 121
-    i9: 237
-    i10: 107
-    i11: 123
-    i12: 33
-    i13: 191
-    i14: 241
-    i15: 1
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0
 --- !u!195 &195161195136669488
 NavMeshAgent:
   m_ObjectHideFlags: 1

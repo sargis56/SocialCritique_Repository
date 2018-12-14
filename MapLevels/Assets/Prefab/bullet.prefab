@@ -24,8 +24,6 @@ GameObject:
   - component: {fileID: 65836549887078434}
   - component: {fileID: 114581262947615278}
   - component: {fileID: 54924753998352360}
-  - component: {fileID: 114683071739203596}
-  - component: {fileID: 114704240460258332}
   m_Layer: 9
   m_Name: bullet
   m_TagString: bullet
@@ -39,7 +37,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1938000213688378}
-  m_LocalRotation: {x: 0, y: 0.008348529, z: 0, w: 0.9999652}
+  m_LocalRotation: {x: 0, y: 0.0070393477, z: 0, w: 0.99997526}
   m_LocalPosition: {x: -9.799, y: 25.712126, z: -21.296}
   m_LocalScale: {x: 0.03, y: 0.03, z: 0.3}
   m_Children: []
@@ -127,56 +125,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
---- !u!114 &114683071739203596
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1938000213688378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 26
-    i1: 0
-    i2: 87
-    i3: 33
-    i4: 172
-    i5: 186
-    i6: 161
-    i7: 100
-    i8: 74
-    i9: 117
-    i10: 227
-    i11: 10
-    i12: 79
-    i13: 200
-    i14: 237
-    i15: 145
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0
---- !u!114 &114704240460258332
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1938000213688378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TransformSyncMode: 3
-  m_SendInterval: 0.1
-  m_SyncRotationAxis: 7
-  m_RotationSyncCompression: 0
-  m_SyncSpin: 0
-  m_MovementTheshold: 0.001
-  m_VelocityThreshold: 0.0001
-  m_SnapThreshold: 5
-  m_InterpolateRotation: 1
-  m_InterpolateMovement: 1
